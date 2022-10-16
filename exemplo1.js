@@ -1,0 +1,19 @@
+/* Site de poker. Conteudo adulto, quando carregamos a pagina
+nóss verificamos a idade do usuário logado e se essa idade
+for menos de 18 anos nós mostramos a mensagem: 
+Conteúdo proibido para menores.
+Dados dos usuários:
+Nome: "Pedro"
+Data de nasscimento: 2010
+*/
+
+const nome = "Pedro";
+const anoNascimento = 2010;
+
+if(2022 - anoNascimento >=18){
+    console.log("Pode jogar!");
+} else{
+    console.log("Acessso proibido!");
+}
+
+console.log();
