@@ -7,10 +7,18 @@ Nome: "Pedro"
 Data de nasscimento: 2010
 */
 
+
+function obterAnoAtual(){
+    const dataAtual = new Date();
+    return dataAtual.getFullYear();
+}
+
 const nome = "Pedro";
 const anoNascimento = 2010;
+const anoAtual = obterAnoAtual();
+const idade = anoAtual - anoNascimento
 
-if(2022 - anoNascimento >=18){
+if(idade >=18){
     console.log("Pode jogar!");
 } else{
     console.log("Acessso proibido!");
